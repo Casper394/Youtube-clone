@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.push-back {
+  position: absolute;
+  left: -40px;
+}
+
+.tooltip::before {
+  content: attr(data-name);
+  visibility: hidden;
+  color: white;
+  text-align: center;
+  font-size: .9rem;
+  background-color: rgba(97, 97, 97, .8);
+  white-space: nowrap;
+  border-radius: 6px;
+  padding: 0.4rem 0.3rem;
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.tooltip:hover::before {
+  visibility: visible;
+}
+
+.notifications::after {
+  content: attr(data-notifications);
+  color: white;
+  font-size: .7rem;
+  position: absolute;
+  top: 12%;
+  right: -5%;
+  background-color: #dc2626;
+  border-radius: 9999px;
+  padding: 0 .3rem;
+}
