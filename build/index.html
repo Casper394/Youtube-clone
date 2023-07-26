@@ -10,8 +10,9 @@
   </head>
 
   <body class="font-sans bg-primaryDark overflow-x-hidden">
-    <div class="flex items-center fixed top-0 justify-between px-4 h-[56px] w-[calc(100%_+_10px)] bg-primaryDark">
-      <div class="flex items-center space-x-4">
+    <div>
+      <div class="z-20 flex items-center fixed top-0 justify-between px-4 h-[56px] w-[100vw] bg-primaryDark">
+        <div class="flex items-center space-x-4">
         <button class="hover:bg-secondaryDark rounded-full h-[40px] w-[40px] flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6"><path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" /></svg></button>
         <button class="w-[90px] h-[20px]"><svg class="external-icon" viewBox="0 0 90 20" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;">
           <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
@@ -33,8 +34,8 @@
           </svg>
         </svg>
         </button>
-      </div>
-      <div>
+        </div>
+        <div>
         <div class="flex">
           <form class="flex h-[40px]">
             <div class="search-input-wrapper relative flex items-center min-w-[28vw] bg-[#121212] border border-borderColor rounded-l-full">
@@ -46,16 +47,29 @@
           </form>
           <button data-name="Search with your voice" class="bg-secondaryDark tooltip relative rounded-full h-[40px] w-[40px] flex justify-center items-center ml-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6"><path d="M8.25 4.5a3.75 3.75 0 117.5 0v8.25a3.75 3.75 0 11-7.5 0V4.5z" /><path d="M6 10.5a.75.75 0 01.75.75v1.5a5.25 5.25 0 1010.5 0v-1.5a.75.75 0 011.5 0v1.5a6.751 6.751 0 01-6 6.709v2.291h3a.75.75 0 010 1.5h-7.5a.75.75 0 010-1.5h3v-2.291a6.751 6.751 0 01-6-6.709v-1.5A.75.75 0 016 10.5z" /></svg></button>
         </div>
-      </div>
-      <div class="flex items-center space-x-5 mr-8">
+        </div>
+        <div class="flex items-center space-x-5 mr-8">
         <div class="flex space-x-2">
           <button data-name="create" class="hover:bg-secondaryDark relative tooltip rounded-full h-[40px] w-[40px] flex justify-center items-center"><svg fill="white" height="24" style="pointer-events: none; display: block; width: 24px; height: 24px;" viewBox="0 0 24 24" width="24" focusable="false"><path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"></path></svg></button>
           <button data-name="notification" data-notifications="9+" class="hover:bg-secondaryDark notifications relative tooltip rounded-full h-[40px] w-[40px] flex justify-center items-center"><svg fill="white" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 24px; height: 24px;"><path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z"></path></svg></button>
         </div>
         <button class="rounded-full h-[32px] w-[32px]"><img class="rounded-full" src="./images/user-profile-picture.jpg" alt="user profile picture"></button>
+        </div>
+      </div>
+      <div class="bg-primaryDark w-[100vw] py-3 space-x-2 fixed left-[260px] mt-[10px] top-[41px] text-sm font-medium z-10 text-white">
+        <button class="bg-white text-black rounded-lg px-[14px] py-[6px]">All</button>
+        <button class="bg-secondaryDark rounded-lg px-[14px] py-[6px] hover:bg-[#3d3d3d] transition-all">CSS</button>
+        <button class="bg-secondaryDark rounded-lg px-[14px] py-[6px] hover:bg-[#3d3d3d] transition-all">Gaming</button>
+        <button class="bg-secondaryDark rounded-lg px-[14px] py-[6px] hover:bg-[#3d3d3d] transition-all">Podcasts</button>
+        <button class="bg-secondaryDark rounded-lg px-[14px] py-[6px] hover:bg-[#3d3d3d] transition-all">Music</button>
+        <button class="bg-secondaryDark rounded-lg px-[14px] py-[6px] hover:bg-[#3d3d3d] transition-all">Live</button>
+        <button class="bg-secondaryDark rounded-lg px-[14px] py-[6px] hover:bg-[#3d3d3d] transition-all">Cars</button>
+        <button class="bg-secondaryDark rounded-lg px-[14px] py-[6px] hover:bg-[#3d3d3d] transition-all">Watched</button>
+        <button class="bg-secondaryDark rounded-lg px-[14px] py-[6px] hover:bg-[#3d3d3d] transition-all">Recently uploaded</button>
+        <button class="bg-secondaryDark rounded-lg px-[14px] py-[6px] hover:bg-[#3d3d3d] transition-all">New to you</button>
       </div>
     </div>
-    <div class="h-[100vh] mt-[56px]">
+    <div class="mt-[56px]">
       <div class="overflow-y-hidden fixed pb-[50px] hover:overflow-y-scroll hover:w-[242px] w-[234px] text-white h-[100%] bg-primaryDark">
         <div class="p-[0.75rem] border-b border-b-[#343434] text-sm font-medium">
           <div class="border-b border-b-[#343434] pb-3">
@@ -126,6 +140,385 @@
         </div>
       </div>
       <div class="relative left-[270px] text-white">
+        <div class="relative top-[85px]">
+          <div class="grid-container grid gap-x-[10px] gap-y-[20px] pb-3">
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer">
+              <div class="bg-gray-400 rounded-lg h-[200px]"></div>
+              <div class="mt-2 flex">
+                <div class="mr-3">
+                  <div class="bg-secondaryDark h-[36px] w-[36px] rounded-full"></div>
+                </div>
+                <div>
+                  <button class="font-medium text-lg">Title</button>
+                  <div class="text-[#9C9C9C] text-[0.9rem] tracking-tight">
+                    <p>Channel name</p>
+                    <div class="flex items-center"><span class="block">173k views</span><div class="h-[4px] w-[4px] mx-2 rounded-full bg-[#9C9C9C]"></div><span>3 hours ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .push-back {
   position: absolute;
   left: -40px;
@@ -45,5 +46,36 @@
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 9999px;
+}
+
+@media screen and (min-width: 2200px) {
+  .grid-container {
+    grid-template-columns: repeat(6, 13.5%);
+    grid-template-rows: repeat(2, 300px);
+  }
+}
+@media screen and (min-width: 1800px) and (max-width: 2200px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 16.5%);
+    grid-template-rows: repeat(2, 300px);
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1800px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(2, 300px);
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 26.5%);
+    grid-template-rows: repeat(2, 300px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 37%);
+    grid-template-rows: repeat(2, 300px);
+  }
 }
 
